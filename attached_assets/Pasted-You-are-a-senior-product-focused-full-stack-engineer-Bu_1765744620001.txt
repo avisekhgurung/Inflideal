@@ -1,0 +1,239 @@
+You are a senior product-focused full-stack engineer.
+
+Build a MOBILE-FIRST POC web application called:
+
+“Influencer Deal, Contract & Billing Platform”
+
+Primary users:
+- Influencers (main users)
+- Brands (interact via influencers)
+
+The app is mainly used on mobile phones.
+UI MUST be mobile-first, clean, modern, and touch-friendly.
+Design it like a SaaS mobile app so it can later be converted into a mobile app.
+
+------------------------------------
+TECH STACK
+------------------------------------
+Frontend:
+- React
+- Tailwind CSS (mobile-first)
+
+Backend:
+- Node.js + Express
+
+Storage:
+- In-memory or JSON file storage (POC only)
+
+File Upload:
+- Local file storage for PDFs / images
+
+Payments:
+- Mock payment flow (no real gateway)
+
+Auth:
+- Mock login (single influencer)
+
+------------------------------------
+CORE PRODUCT IDEA
+------------------------------------
+Influencers manage all brand deals professionally.
+Influencers tell brands:
+“I use this platform to manage contracts, deliverables & billing.”
+
+No monthly subscription.
+Monetization happens PER CONTRACT only.
+
+------------------------------------
+MONETIZATION MODEL (STRICT)
+------------------------------------
+For every brand contract:
+- Contract Creation Fee: ₹499
+- Platform / Deliverables Management Fee: ₹500
+
+Total platform charge per contract = ₹1000
+
+No subscriptions.
+No ads.
+No other monetization.
+
+------------------------------------
+FEATURES
+------------------------------------
+
+1️⃣ LOGIN (Mock)
+- Simple entry screen
+- “Continue as Influencer” button
+
+------------------------------------
+
+2️⃣ DASHBOARD (Mobile Home)
+- Card-based vertical layout
+- Summary cards:
+  - Active Deals
+  - Signed Contracts
+  - Paid Invoices
+- Primary CTA:
+  ➕ Create New Brand Deal
+
+Bottom Navigation (sticky):
+- Home
+- Deals
+- Contracts
+- Billing
+
+------------------------------------
+
+3️⃣ BRAND DEAL CREATION
+- Mobile-friendly form
+- Fields:
+  - Brand Name
+  - Deal Title
+  - Deal Amount
+  - Start Date
+  - End Date
+
+DELIVERABLES (MANDATORY):
+Each deal must include deliverables.
+
+Deliverable Fields:
+- Platform (Instagram / YouTube / Twitter)
+- Content Type (Reel / Video / Story / Post)
+- Quantity
+- Frequency (Per Week / Per Month / One-time)
+- Optional Notes
+
+UI:
+- Add / remove deliverables dynamically
+
+------------------------------------
+
+4️⃣ DEAL DETAILS SCREEN
+- Deal shown as a card
+- Status badge: Pending
+- Deliverables listed clearly
+
+CTA:
+✅ Accept Deal & Create Contract
+
+------------------------------------
+
+5️⃣ EXCLUSIVE CONTRACT CONFIRMATION (CRITICAL)
+Before contract creation, show confirmation screen:
+
+Text:
+“This is an EXCLUSIVE CONTRACT.
+All brand deals during this contract period
+must be registered on this platform.”
+
+- Checkbox:
+  “I understand and agree to exclusive usage”
+
+CTA:
+✍️ Sign Contract
+
+Store:
+- exclusive = true
+- contract period
+
+------------------------------------
+
+6️⃣ CONTRACT MANAGEMENT (WITH PROOF)
+After signing:
+- Create contract record
+
+Fields:
+- Contract Name
+- Brand Name
+- Linked Deal
+- Contract Start Date
+- Contract End Date
+- Contract Value
+- Status (Signed / Active)
+- Contract Proof Upload (PDF / Image)
+
+UI:
+- Card-based contract list
+- Show proof file name / preview
+- Show “Exclusive Contract” label
+
+------------------------------------
+
+7️⃣ BILLING & INVOICE GENERATION (MONETIZATION POINT)
+After contract creation:
+- Auto-generate professional invoice
+
+Invoice must include:
+- Invoice Number (unique)
+- Invoice Date
+- Influencer Details
+- Brand Details
+- Deal & Deliverables summary
+- Charges:
+  - Contract Fee: ₹499
+  - Platform Service Fee: ₹500
+- Total Amount: ₹1000
+- Platform logo / watermark
+- Note: “Invoice generated via platform”
+
+Allow:
+- View invoice
+- Download invoice (optional)
+
+------------------------------------
+
+8️⃣ PAYMENT FLOW (MOCK)
+- “Proceed to Payment” button
+- Simulate successful payment
+- Mark invoice as PAID
+- Contract becomes ACTIVE
+
+------------------------------------
+
+9️⃣ CONTRACTS TAB
+- List of all contracts
+- Status:
+  - Active
+  - Completed
+- Proof attached
+- Invoice status visible
+
+------------------------------------
+
+🔟 BILLING TAB
+- List of all invoices
+- Paid / Unpaid status
+- Linked contract
+
+------------------------------------
+UI / DESIGN RULES
+------------------------------------
+- Mobile-first (320px baseline)
+- Card-based UI
+- Rounded corners
+- Soft shadows
+- Minimal colors
+- Touch-friendly spacing
+- Bottom navigation like mobile apps
+
+------------------------------------
+CODE QUALITY
+------------------------------------
+- Clean folder structure
+- Reusable components
+- Clear comments
+- Easy to extend later
+
+------------------------------------
+DELIVERABLES
+------------------------------------
+- Fully working mobile-first POC on Replit
+- README explaining:
+  - Product idea
+  - Exclusive contract logic
+  - Monetization flow
+  - Billing & invoice generation
+  - Future scalability
+
+Focus on realism, UX clarity, and demo readiness.
+This is a POC, not a production system.
